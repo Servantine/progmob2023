@@ -1,11 +1,11 @@
-package com.nikolaus.progmob2023
+package com.example.progmobile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class LayoutActivity : AppCompatActivity() {
+class SampleRecyclerView : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_main)
+        setContentView(R.layout.activity_sample_recycler_view)
     }
 }

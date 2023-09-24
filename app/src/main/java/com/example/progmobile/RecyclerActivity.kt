@@ -1,11 +1,11 @@
-package com.nikolaus.progmob2023
+package com.example.progmobile
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class TableActivity : AppCompatActivity() {
+class RecyclerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_table)
+        setContentView(R.layout.activity_recycler2)
     }
 }
