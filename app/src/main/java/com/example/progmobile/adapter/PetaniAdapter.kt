@@ -8,12 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.progmobile.R
 import com.example.progmobile.model.petani
 
-class PetaniAdapter(val petani: List<petani>): RecyclerView.Adapter<PetaniAdapter.PetaniHolder>() {
-
+class PetaniAdapter(val petani: List<petani>) : RecyclerView.Adapter<PetaniAdapter.PetaniHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PetaniAdapter.PetaniHolder {
-        return
-        PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani, parent, false))
-
+        return PetaniHolder(LayoutInflater.from(parent.context).inflate(R.layout.rv_item_dutatani, parent, false))
     }
 
     override fun onBindViewHolder(holder: PetaniAdapter.PetaniHolder, position: Int) {
@@ -23,6 +20,7 @@ class PetaniAdapter(val petani: List<petani>): RecyclerView.Adapter<PetaniAdapte
     override fun getItemCount(): Int {
         return petani.size
     }
+
     class PetaniHolder(view: View) : RecyclerView.ViewHolder(view) {
         lateinit var txtUser: TextView
         lateinit var txtNama: TextView
