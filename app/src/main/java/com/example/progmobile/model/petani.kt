@@ -1,9 +1,11 @@
 package com.example.progmobile.model
 
 data class petani(
-    val user: String,
     val nama: String,
-    val jumlahLahan: String,
-    val identifikasi: String,
-    val tambahLahan: String
+    val nim: String,
+    val alamat: String,
+    val email: String,
+    val foto: String,
+    val nim_progmob: String,
+
 )

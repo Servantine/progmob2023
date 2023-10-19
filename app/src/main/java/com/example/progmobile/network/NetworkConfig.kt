@@ -18,14 +18,14 @@ class NetworkConfig {
     }
 
     fun getRetrofit(): Retrofit {
-        return Retrofit.Builder().baseUrl("https://jsonplaceholder.typicode.com/")
+        return Retrofit.Builder().baseUrl("https://kpsi.fti.ukdw.ac.id")
             .client(getInterceptor()).addConverterFactory(GsonConverterFactory.create()).build()
     }
 
-    fun getService() = getRetrofit().create(Users::class.java)
+    fun getService() = getRetrofit().create(Mhs::class.java)
 }
 
-interface Users {
+interface Mhs {
     @GET("users")
-    fun getUsers(): Call<List<ResponseUsersItem>>
+    fun getUsers(): Call<List<ResponseMhsItem>>
 }

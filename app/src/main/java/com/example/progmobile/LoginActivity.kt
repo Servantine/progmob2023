@@ -1,7 +1,6 @@
 package com.example.progmobile
 
 import android.content.Context
-import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
@@ -33,8 +32,8 @@ class LoginActivity : AppCompatActivity() {
 
         if(!tmpEmail.isNullOrEmpty() && !tmpPassword.isNullOrEmpty()){
             finish()
-            var intent = Intent(this@LoginActivity, GetPetaniActivity::class.java)
-            startActivity(intent)
+//            var intent = Intent(this@LoginActivity, GetPetaniActivity::class.java)
+//            startActivity(intent)
         }
 
         btnLogin.setOnClickListener(View.OnClickListener{ View ->
@@ -44,8 +43,8 @@ class LoginActivity : AppCompatActivity() {
             sharedEditor.apply()
 
             finish()
-            var intent = intent(this@LoginActivity, GetPetaniActivity::class.java)
-            startActivity(intent)
+//            var intent = intent(this@LoginActivity, GetPetaniActivity::class.java)
+//            startActivity(intent)
         })
     }
 
